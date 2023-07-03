@@ -1,0 +1,117 @@
+.contentContainer {
+    min-height: calc(100vh - var(--header-height));
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.fxc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centered {
+    text-align: center;
+}
+
+.around {
+    padding-bottom: 30px;
+}
+
+.reg {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title {
+    font-size: 40pt;
+}
+
+.chapter {
+    margin-top: 40px;
+}
+
+.contentDisplay {
+    border-left: 1px solid var(--accent);
+    padding-left: 30px;
+    width: 50%;
+
+    color: white;
+    background-color: var(--ambient-background);
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.poster {
+    display: flex;
+    column-gap: 20px;
+    border-right: 1px solid var(--accent);
+    height: calc(60vh - var(--header-height));
+}
+
+.contact {
+    border-left: none;
+    border-bottom: 1px solid var(--accent);
+    border-top: 1px solid var(--accent);
+    min-height: calc(50vh - var(--header-height));
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.zstLogoContainer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotionImages {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.textwall {
+    text-align: justify;
+}
+
+.downloadlink {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 620px) {
+    .contact {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .contentDisplay {
+        width: 90%;
+    }
+
+    .menu-element {
+        width: 20%;
+        font-size: 15pt;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner {
+        width: 50%;
+    }
+
+    .menu {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 15px;
+        width: 100%;
+        font-size: 7pt;
+    }
+}

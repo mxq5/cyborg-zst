@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --accent: #EE4729;
+    --accent2: #df2100;
+    --light-background: #2A2F39;
+    --dark-background: #141B25;
+    --ambient-background: #0e141b;
+    --main-background: black;
+    --gradient-background: #0b0f14;
+    
+    --header-height: 100px;
+}
+
+html, body {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    left: 0;
+
+    width: 100vw;
+    height: var(--header-height);
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    display: flex;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner {
+    height: 100%;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    font-family: 'VT323', monospace;
+}
+
+.menu-element {
+    width: 17%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    color: #FFFFFF;
+
+    font-size: 20pt;
+}
+
+.menu-element > a, .menu-element > a:visited, p.downloadlink > a, p.downloadlink > a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu-element:hover, p.downloadlink > a:hover {
+    text-decoration: underline;
+    background: linear-gradient(35deg, var(--accent2), var(--accent));
+    color: var(--main-background);
+}
+
+main {
+    background: linear-gradient(220deg, var(--main-background), var(--gradient-background));
+
+    box-sizing: border-box;
+    padding-top: var(--header-height);
+    
+    width: 100%;
+    min-height: 100vh;
+}
